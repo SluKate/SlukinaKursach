@@ -1,4 +1,4 @@
-import customtkinter as tk
+﻿import customtkinter as tk
 
 from models import RouteModel
 
@@ -14,8 +14,8 @@ class RouteView():
 
 
 
-        edit_button = tk.CTkButton(dir_rect, text="Отменить", font=("Roboto", 16), text_color="#FFFFFF", fg_color="#FF7F50", command=lambda :controller.click_delete_route_submit(self.model))
-        edit_button.place(relheight = 1, relx = 0.6)
+        edit_button = tk.CTkButton(dir_rect, text="Отменить", font=("Roboto", 16), text_color="#FFFFFF", fg_color="#FF7F50", command=lambda :controller.click_delete_route_submit(self.model), width = 50)
+        edit_button.place(relheight = 1, relx = 0.75)
         label_name.place(relheight=1, x=30)
 
         dir_rect.pack(fill=tk.X, pady=1)
